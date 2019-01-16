@@ -1,3 +1,82 @@
+Skip to content
+Why GitHub? 
+Enterprise
+Explore 
+Marketplace
+Pricing 
+
+Search
+
+Sign in
+Sign up
+2,734 77,712 37,045 github/gitignore
+ Code  Pull requests 61  Projects 0  Insights
+Join GitHub today
+GitHub is home to over 28 million developers working together to host and review code, manage projects, and build software together.
+
+gitignore/Global/Eclipse.gitignore
+e833921  on Jun 17, 2018
+@shiftkey shiftkey Merge pull request #2649 from lukoerfer/master
+@shiftkey @sherzodv @tyutyutyu @aroben @Utumno @segfly @drasolka @rlee287 @rafiw @raeglan @mimibar @fhemberger @lukoerfer @leandrodeleite @jcarsique @jayvdb @harshadsabne @gAmUssA @DenisGorbachev @pangratz @defunkt @arinto @apetresc @alexkaratarakis
+     
+57 lines (41 sloc)  754 Bytes
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+
 # Compiled class file
 *.class
 
