@@ -5,7 +5,7 @@ public class Example3 {
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
 		int income, age, creditScore;
-		System.out.print("How old? ");
+		System.out.print("Enter applicant income:  ");
 		income = scnr.nextInt();
 		System.out.print("Enter applicant age: ");
 		age = scnr.nextInt();
