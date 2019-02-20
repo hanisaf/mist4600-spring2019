@@ -8,7 +8,7 @@ public class Example1 {
 		System.out.print("Enter a number ");
 		number = scnr.nextInt();
 		
-		while(number >= 0 && number <= 9) {
+		if(number >= 0 && number <= 9) {
 			System.out.println("A single digit number!");
 		}
 		
