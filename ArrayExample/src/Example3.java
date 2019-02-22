@@ -11,5 +11,5 @@ public class Example3 {
 		//There is a discount, the store will forgo the cents in each price, e.g., 33.4 will be 33
 		//what is the new sum, max and min prices
 	}
-
+ 
 }

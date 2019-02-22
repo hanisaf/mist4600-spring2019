@@ -9,7 +9,7 @@ public class Example1 {
 	     itemCounts[2] = 117;
 
 	     System.out.print(itemCounts[1]);
-
+ 
 	}
 
 }
