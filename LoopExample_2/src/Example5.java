@@ -13,14 +13,30 @@ public class Example5 {
 //			System.out.print("Enter numbers, a negative number to exit: ");
 //		}
 		double sum = 0.0;
-		
+		double mean;
 		double number = 0;
-		while(number >= 0) {
+		double max=0.0;
+		double min=Double.MAX_VALUE;
+		int count = 0;
+		while(true) {
 			System.out.print("Enter numbers, a negative number to exit: ");
 			number = scnr.nextDouble();
+			if(number < 0)
+				break;
+			count = count + 1;
 			sum = sum + number;
+			
+			if(number > max) 
+				max=number;
+//			max = Math.max(number, max);
+			
+			if(number < min)
+				min = number;
+//			max = Math.min(number, min);			
+			
 		}
-		System.out.println(sum);
+		mean = sum / count;
+		System.out.println("sum = " + sum + ", mean = " + mean + ", min = " + min + " , max = " + max);	
 		
 	}
 
