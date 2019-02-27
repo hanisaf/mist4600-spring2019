@@ -1,15 +1,19 @@
-
 public class Example3 {
 
 	public static void main(String[] args) {
-		double[] prices = {33.4, 55.0, 109.99, 234.0, 66.6};
+		String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+		
+		//1 print the size of the months array i.e., how many months
+		
+		//2 print the content of the months array, each month with its order e.g., 1 Jan 2 Feb ...
+		
+		//3 do 2 in reverse order, e.g., 12 Dec 11 Nov ...
+		
+		//4 print odd number months
+		
+		//5 print even number months
+		
 
-		//calculate the total amount in the shopping cart i.e., sum prices
-		
-		//what is the highest price, what is the lowest price
-		
-		//There is a discount, the store will forgo the cents in each price, e.g., 33.4 will be 33
-		//what is the new sum, max and min prices
 	}
  
 }

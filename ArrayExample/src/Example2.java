@@ -1,19 +1,28 @@
+
 public class Example2 {
 
 	public static void main(String[] args) {
-		String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+		Restaurant favLunchPlace = new Restaurant();
+		Restaurant favDinnerPlace = new Restaurant();
+
+		favLunchPlace.setName("Central Deli");
+		favLunchPlace.setRating(4);
+
+		favDinnerPlace.setName("Friends Cafe");
+		favDinnerPlace.setRating(5);
 		
-		//1 print the size of the months array i.e., how many months
 		
-		//2 print the content of the months array, each month with its order e.g., 1 Jan 2 Feb ...
+		Restaurant[] restaurants = new Restaurant[2];
+		restaurants[0] = favLunchPlace;
+		restaurants[1] = favDinnerPlace;
 		
-		//3 do 2 in reverse order, e.g., 12 Dec 11 Nov ...
-		
-		//4 print odd number months
-		
-		//5 print even number months
-		
+//		for(int i = 0; i < restaurants.length; i++) {
+//			Restaurant item = restaurants[i];
+//			item.print();
+//		}
+//		
+//		System.out.println("Bon apetit");
 
 	}
- 
+
 }
