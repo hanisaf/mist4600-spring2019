@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Example5 {
+public class Example6 {
 	
 	//TODO refactor the business logic to implement the new tax method 
 	
@@ -48,7 +48,7 @@ public class Example5 {
 	public static void main(String[] args) {
 		
 		Scanner scnr = new Scanner(System.in);
-		Example5 ex = new Example5(); 
+		Example6 ex = new Example6(); 
 		
 		int income, deductions, credits;
 		double tax;
