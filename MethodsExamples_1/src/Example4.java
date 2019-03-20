@@ -34,7 +34,7 @@ public class Example4 {
 	 * and no player has won
 	 * @return true when the game is a draw, false otherwise
 	 */
-	public boolean isDrawMove(int row, int col, char[][] board) {
+	public boolean isDrawMove(char[][] board) {
 		return false;
 	}
 	
