@@ -17,8 +17,8 @@ public class Client {
 	private boolean firstTransaction = true;
 	private Client referringClient;
 	
-	private final static int welcomePoints = 10000;
-	private final static int referringPoints = 20000;
+	private final int welcomePoints = 10000;
+	private final int referringPoints = 20000;
 	
 	public Client(String name) {
 		this.name = name;
