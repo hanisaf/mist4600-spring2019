@@ -17,8 +17,8 @@ public class Client {
 	private boolean firstTransaction = true;
 	private Client referringClient;
 	
-	private final int welcomePoints = 10000;
-	private final int referringPoints = 20000;
+	private final static int welcomePoints = 10000;
+	private final static int referringPoints = 20000;
 	
 	public Client(String name) {
 		this.name = name;
@@ -45,18 +45,42 @@ public class Client {
 	}
 	
 	public void transact(double amount) {
-		if(firstTransaction && referringClient != null) {
-			referringClient.addPoints(referringPoints);
+		if(firstTransaction) {
 			firstTransaction = false;
+			if(referringClient != null) 
+				referringClient.addPoints(referringPoints);			
 		}
 		balance = balance + amount;
 	}
+	
+//  // Pyramid scheme implementation	
+//	public void transact(double amount) {
+//		if(firstTransaction) {
+//			firstTransaction = false;
+//			Client rc = referringClient;
+//			double multiplier = 1.0;
+//			while(rc != null) {
+//				rc.addPoints((int) (multiplier * referringPoints));
+//				multiplier = multiplier / 2;
+//				rc = rc.referringClient;
+//			}						
+//		}
+//		balance = balance + amount;
+//	}
 	
 	public void addPoints(int extraPoints) {
 		if(extraPoints > 0) 
 			points += extraPoints;
 		else
 			System.out.println("Incorrect points");
+	}
+	
+	public int getWelcomePoints() {
+		return welcomePoints;
+	}
+	
+	public int getReferringPoints() {
+		return referringPoints;
 	}
 	
 	public String toString() {
