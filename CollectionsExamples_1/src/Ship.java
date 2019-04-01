@@ -86,5 +86,24 @@ public class Ship
 
     }
     
-
+    // more TODO -->
+    /**
+     * searches for the first container matching content
+     * the match is partial and case insensitive
+     * @param content
+     * @return the first container matching content, null if none found
+     */
+    public Container getContainer(String content) {
+    	return null;
+    }
+    
+    /**
+     * searches for all containers matching content
+     * the match is partial and case insensitive
+     * @param content
+     * @return a list of containers matching content, null if none found
+     */
+    public ArrayList<Container> getContainers(String content) {
+    	return null;
+    }
 }
