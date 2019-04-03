@@ -5,8 +5,8 @@ public class HashSetExample1 {
 
 	public static void main(String[] args) {
 
-		//ArrayList<String> words = new ArrayList<String>();
-		HashSet<String> words = new HashSet<String>();
+		ArrayList<String> words = new ArrayList<String>();
+		//HashSet<String> words = new HashSet<String>();
 		
 		words.add("Drink");
 		words.add("Java");

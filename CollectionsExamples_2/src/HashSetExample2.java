@@ -9,8 +9,8 @@ public class HashSetExample2 {
 		
 		System.out.print("Enter a sentence: ");
 		
-		//ArrayList<String> words = new ArrayList<String>();
-		HashSet<String> words = new HashSet<String>();
+		ArrayList<String> words = new ArrayList<String>();
+		//HashSet<String> words = new HashSet<String>();
 		
 		while(true) {
 			String word = scnr.next();
