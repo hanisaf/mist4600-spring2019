@@ -25,6 +25,7 @@ public class HashSetExample2 {
 		
 		System.out.println("Your words are : " + words);
 		System.out.println(words.size());
+		
 	}
 
 }
