@@ -8,15 +8,16 @@ public class GroceryItem {
 		itemName = newName;
 	}
 
-	public void setExpiration(String newExpDate) {
-		   expirationDate = newExpDate;
-		}
-	
 	public void setQuantity(int newQty) {
 		itemQuantity = newQty;
 	}
 
+	public void setExpiration(String newExpDate) {
+		   expirationDate = newExpDate;
+		}
+	
 	public void printItem() {
-		System.out.println(itemName + " / " + itemQuantity + " " + expirationDate);
+		System.out.println(itemName + " / " + itemQuantity);
+		System.out.println( "\texpires on " + expirationDate);
 	}
 }
