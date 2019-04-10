@@ -2,7 +2,7 @@
 public class GroceryItem {
 	private String itemName;
 	private int itemQuantity;
-	private String expirationDate;
+	private String expiration;
 	
 	public void setName(String newName) {
 		itemName = newName;
@@ -13,11 +13,11 @@ public class GroceryItem {
 	}
 
 	public void setExpiration(String newExpDate) {
-		   expirationDate = newExpDate;
-		}
+	   expiration = newExpDate;
+	}
 	
 	public void printItem() {
 		System.out.println(itemName + " / " + itemQuantity);
-		System.out.println( "\texpires on " + expirationDate);
+		System.out.println( "\texpires on " + expiration);
 	}
 }
