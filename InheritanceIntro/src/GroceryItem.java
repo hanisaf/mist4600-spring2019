@@ -6,7 +6,6 @@ public class GroceryItem {
 	
 	public void setName(String newName) {
 		itemName = newName;
-		return;
 	}
 
 	public void setExpiration(String newExpDate) {
@@ -15,11 +14,9 @@ public class GroceryItem {
 	
 	public void setQuantity(int newQty) {
 		itemQuantity = newQty;
-		return;
 	}
 
 	public void printItem() {
-		System.out.println(itemName + " " + itemQuantity + " " + expirationDate);
-		return;
+		System.out.println(itemName + " / " + itemQuantity + " " + expirationDate);
 	}
 }
