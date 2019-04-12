@@ -1,8 +1,7 @@
-
 public class InventoryManagement {
 	
 	public static void refreshItem(Item item) {
-	
+
 		if(item.getQuantity() < 5)
 			System.out.println("Order more of " + item.getName());
 		else

@@ -1,6 +1,4 @@
-
 public class ImportedItem extends Item {
-
 	private String countryOfOrigin;
 	
 	public void setCountryOfOrigin(String countryOfOrigin) {
