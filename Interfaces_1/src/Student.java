@@ -31,4 +31,6 @@ public class Student {
 	public String toString() {
 		return "Student " + name + " is " + age + " years old and scores " + grade + "%";
 	}
+
+
 }

@@ -38,9 +38,7 @@ public class Main2Student {
 		//we would like to sort the class roll by student grade
 		Arrays.sort(mist4600);
 		for(Student s : mist4600)
-			System.out.println(s);
-		
-		
+			System.out.println(s);	
 
 	}
 
