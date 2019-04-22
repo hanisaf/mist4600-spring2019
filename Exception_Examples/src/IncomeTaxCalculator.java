@@ -2,8 +2,14 @@ import java.util.Scanner;
 
 public class IncomeTaxCalculator {
 
-	
+	/**
+	 * calculate income tax
+	 * @param income
+	 * @return income tax if valid income -1 if not valid
+	 */
 	public static double calculateTax(double income) {
+		if(income < 0)
+			return -1;		
 		double tax;
 		if (income <= 9525)
 			tax = income * 0.1;
@@ -26,10 +32,10 @@ public class IncomeTaxCalculator {
 		Scanner scnr = new Scanner(System.in);
 		System.out.print("Please enter income $");
 		int income = scnr.nextInt();
-		if(income < 0) { // refuse negative input
+		double tax = calculateTax(income);
+		if(tax < 0) { // refuse negative input
 			System.out.print("Sorry income can't be negative.");
-		} else {
-			double tax = calculateTax(income);
+		} else {			
 			System.out.println("The income is $" + tax);
 		}
 	}

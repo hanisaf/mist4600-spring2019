@@ -1,19 +1,18 @@
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Student s1 = new Student();
-		s1.setName("Jade Luck");
-		s1.setAge(21);
-		System.out.println(s1);
 		
-		Student s2 = new Student("Jack", 2);
-		s2.setAge(2);
-		System.out.println(s2);
-		
-		Student s3 = new Student("Z", 22);
-		s3.setName("Zen");
-		System.out.println(s3);
+		Scanner scnr = new Scanner(System.in);
+		Student student = new Student();
+		System.out.print("Enter student name: ");
+		String name = scnr.nextLine();
+		student.setName(name);
+		System.out.print("Enter student age: ");
+		int age = scnr.nextInt();
+		student.setAge(age);
+		System.out.println(student);
 	}
 
 }
