@@ -3,16 +3,19 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
-		Scanner scnr = new Scanner(System.in);
-		Student student = new Student();
-		System.out.print("Enter student name: ");
-		String name = scnr.nextLine();
-		student.setName(name);
-		System.out.print("Enter student age: ");
-		int age = scnr.nextInt();
-		student.setAge(age);
-		System.out.println(student);
+		try {
+			Scanner scnr = new Scanner(System.in);
+			System.out.print("Enter student name: ");
+			String name = scnr.nextLine();
+			System.out.print("Enter student age: ");
+			int age = scnr.nextInt();
+			Student student = new Student(name, age);
+			System.out.println(student);
+		} catch (Exception ex) {
+			System.out.println("Cannot create student record");
+			System.out.println(ex);
+		}
+
 	}
 
 }

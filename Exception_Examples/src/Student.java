@@ -15,7 +15,7 @@ public class Student {
 		System.out.println("Student object created ....");
 	}
 	
-	public Student(String name, int age) {
+	public Student(String name, int age) throws Exception {
 		setName(name);
 		this.setAge(age);
 	}
@@ -24,9 +24,10 @@ public class Student {
 		return email;
 	}
 	
-	public void setName(String name) {
+	public void setName(String name) throws Exception {
 		if(name.length() < 2) {
-			System.out.println("Incorrect name, defaulting to N/A");
+//			System.out.println("Incorrect name, defaulting to N/A");
+			throw new Exception("Incorrect name");
 		} else {
 			this.name = name;
 			generateEmail();
@@ -35,9 +36,10 @@ public class Student {
 	public String getName() {
 		return name;
 	}
-	public void setAge(int age) {
+	public void setAge(int age) throws Exception {
 		if(age < 18) {
-			System.out.println("Incorrect age, defaulting to 18");
+			throw new Exception("Incorrect age");
+//			System.out.println("Incorrect age, defaulting to 18");
 		} else
 			this.age = age;
 	}
